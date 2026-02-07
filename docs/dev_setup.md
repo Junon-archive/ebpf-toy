@@ -105,6 +105,6 @@ This confirms that:
 - the tracepoint attachment worked as expected,
 - kernel events were counted in an eBPF map,
 - and the user-space program correctly read and printed the data.
-This milestone validates the fundamental capability to observe kernel-level behavior using eBPF.
+This milestone validates the fundamental capability to observe kernel-level behavior using eBPF
 
 ---
