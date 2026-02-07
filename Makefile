@@ -31,7 +31,14 @@ clean:
 	rm -rf $(BINDIR)
 
 BPF_CLANG ?= clang
-BPF_CFLAGS := -O2 -g -target bpf -D__TARGET_ARCH_x86
+KERNEL_RELEASE := $(shell uname -r)
+KERNEL_BUILD   := /lib/modules/$(KERNEL_RELEASE)/build
+
+BPF_CFLAGS := -O2 -g -target bpf -D__TARGET_ARCH_x86 -I./bpf -I/usr/include/bpf
+
 
 bpf-runqlat:
-	$(BPF_CLANG) $(BPF_CFLAGS) -I./bpf -c bpf/runqlat.bpf.c -o bpf/runqlat.bpf.o
+	$(BPF_CLANG) $(BPF_CFLAGS) -c bpf/runqlat.bpf.c -o bpf/runqlat.bpf.o
+
+bpf-memlat:
+	$(BPF_CLANG) $(BPF_CFLAGS) -c bpf/memlat.bpf.c -o bpf/memlat.bpf.o

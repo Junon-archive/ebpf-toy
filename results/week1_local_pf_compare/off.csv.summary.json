@@ -1,0 +1,5 @@
+{
+  "duration_sec": 10,
+  "total": 16165,
+  "note": "bucket i means [2^i, 2^(i+1)) microseconds"
+}
