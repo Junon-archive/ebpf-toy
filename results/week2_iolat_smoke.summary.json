@@ -1,0 +1,7 @@
+{
+  "tool": "iolat",
+  "duration_sec": 2,
+  "total": 46,
+  "generated_at": "2026-02-07T16:38:02+09:00",
+  "out": "results/week2_iolat_smoke.csv"
+}

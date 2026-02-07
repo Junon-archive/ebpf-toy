@@ -42,3 +42,6 @@ bpf-runqlat:
 
 bpf-memlat:
 	$(BPF_CLANG) $(BPF_CFLAGS) -c bpf/memlat.bpf.c -o bpf/memlat.bpf.o
+
+bpf-iolat:
+	$(BPF_CLANG) $(BPF_CFLAGS) -c bpf/iolat.bpf.c -o bpf/iolat.bpf.o

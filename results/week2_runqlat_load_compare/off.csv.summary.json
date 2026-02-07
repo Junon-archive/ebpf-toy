@@ -1,0 +1,11 @@
+{
+  "module": "runqlat",
+  "metric": "runqueue_wait_latency",
+  "unit": "microseconds",
+  "duration_sec": 10,
+  "total_events": 14844,
+  "tail_threshold_us": 8,
+  "tail_events": 14844,
+  "max_bucket": 19,
+  "notes": "bucket i means [2^i, 2^(i+1)) microseconds"
+}
