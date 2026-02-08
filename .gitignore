@@ -1,0 +1,3 @@
+
+# large workload artifacts
+results/**/workload/*.bin
