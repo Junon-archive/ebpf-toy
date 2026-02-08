@@ -1,4 +1,4 @@
-![figure](ebpf-toy/assets/figure.png)
+![figure](assets/figure.png)
 
 # ebpf-toy — Practical Latency Observability with eBPF
 
